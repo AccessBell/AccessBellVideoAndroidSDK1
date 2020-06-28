@@ -2,6 +2,7 @@
 Android SDK for AccessBell video conferencing
 
 The following is a guide on how to set up the sdk in an existing Android project.
+Clone this repository to your device.
 
 Add the Maven repository in the build.gradle file for the Android Studio application.
 
@@ -10,11 +11,12 @@ Add the Maven repository in the build.gradle file for the Android Studio applica
                 google()
                 jcenter()
                 maven {
-                    url "https://github.com/accessbell/AccessBellVideoAndroidSDK1/raw/master/releases"
+                    url "/Users/USERNAME/desktop/AccessBellVideoAndroidSDK1/releases"
                 }
             }
         }
 
+Note that the url points to the location of the repository, which you have cloned.
 Add the following implementation under the dependencies section of the build.gradle section.
 
     implementation ('org.accessbell.react:accessbell-meet-sdk:2.9.0') { transitive = true }
